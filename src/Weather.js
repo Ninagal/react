@@ -33,25 +33,23 @@ export default function WeatherSearch() {
     setCity(event.target.value);
   }
 
-  function link(){
+  /*function link(){
         {updateCity}
         {handleSubmit}
-  }
+  }*/
   const form = (
     <form onSubmit={handleSubmit}>
       <input type="search" placeholder="Enter a city.." onChange={updateCity} />
       <button type="Submit">Search</button>
     </form>
   );
-  const ciudades =(
+  /*const ciudades =(
     <div>
     <a href="" value="Houston" onClick={link}>Houston</a> <a href="" onClick={handleSubmit}>Sidney</a> <a href="" onClick={handleSubmit}>Paris</a> <a href="" onClick={handleSubmit}>New York</a>
     </div>
-    ); 
+    ); */
   return (
     <div>
-      <br></br>
-      {ciudades}
       <br></br>
       {form}
       <br></br>
